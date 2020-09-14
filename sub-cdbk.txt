@@ -1,0 +1,2176 @@
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                      CODEBOOK
+
+
+                             SCF Combined Extract Data
+                                          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      SCF Combined Extract Data                                         Page i
+
+
+                                      CONTENTS
+
+
+      item                                                                page
+
+      CASEID             Case ID (numeric)                                   1
+      WGT                Sample weight                                       1
+      YEAR               Survey Year                                         1
+      Y1                 Case ID with implicate number                       1
+      YY1                Case ID                                             1
+      X1                 Case ID with implicate number                       1
+      XX1                Case ID                                             1
+      CPI_DEFL           Deflator Value                                      2
+      AGE                Age of head of household                            2
+      AGECL              Age group of the head of household                  2
+      HHSEX              Gender of household head                            2
+      EDCL               Education category of head of household             3
+      EDUC               Highest completed grade by head of household        3
+      FAMSTRUCT          Family structure of household                       4
+      HOUSECL            Home-ownership category of household                4
+      KIDS               Total number of children in household               4
+      MARRIED            Marital status of head of household                 5
+      NOCHK              Household has no checking account                   5
+      OCCAT1             Occupation categories for head of household         5
+      OCCAT2             Occupation classification for head of household     6
+      RACE               Race/ethnicity of respondent                        6
+      RACECL             Class of race of respondent                         6
+      RACECL4            Alternate class of race of respondent               7
+      LIFECL             Life cycle of head of household                     7
+      LF                 Labor force participation of head of household      7
+      INDCAT             Industry classifications for head                   7
+      EXPENSHILO         Households overall expenses over last 12 months     8
+      TURNDOWN           Household has been turned down for credit in the    8
+      FEARDENIAL         Household feared being denied credit in the past    8
+      TURNFEAR           Household has been turned down for credit or fea    8
+      BNKRUPLAST5        Household has declared bankruptcy in the past 5     9
+      FORECLLAST5        Respondent had a foreclosure in the last five ye    9
+      NOCCBAL            Household does not carry a balance on credit car    9
+      ASSET              Total value of assets held by household, 2016 do    9
+      ASSETCAT           Asset percentile groups                            10
+      FIN                Total value of financial assets held by househol   10
+      HLIQ               Household has any checking, savings, money marke   10
+      LIQ                Total value of all types of transactions account   11
+      MMA                Total value of money market deposit and money ma   11
+      CHECKING           Total value of checking accounts held by househo   11
+      SAVING             Total value of savings accounts held by househol   11
+      CALL               Total value of call accounts held by household,    11
+      CDS                Total value of certificates of deposit held by h   11
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                        Page ii
+
+
+      item                                                                page
+
+      PREPAID            Amount in prepaid card accounts, 2016 dollars      12
+      NMMF               Total value of directly held pooled investment f   12
+      SAVBND             Total value of savings bonds held by household,    12
+      STOCKS             Total value of directly held stocks held by hous   12
+      BOND               Total value of directly held bonds held by house   12
+      CASHLI             Total cash value of whole life insurance held by   12
+      OTHMA              Total value of other managed assets held by hous   13
+      RETQLIQ            Total value of quasi-liquid held by household, 2   13
+      RETEQ              Total value of equity in quasi-liquid retirement   13
+      ANYPEN             Pension exists for either head of household or s   13
+      OTHFIN             Total value of other financial assets, 2016 doll   14
+      NFIN               Total value of nonfinancial assets held by house   14
+      VEHIC              Total value of all vehicles held by household, 2   14
+      HOUSES             Total value of primary residence of household, 2   14
+      ORESRE             Total value of other residential real estate hel   15
+      NNRESRE            Total value of net equity in nonresidential real   15
+      HBUS               Have active or nonactively managed business(es)    15
+      BUS                Total value of business(es) in which the househo   16
+      ACTBUS             Total value of actively managed business(es), 20   16
+      NONACTBUS          Value of non-actively managed business(es), 2016   16
+      OTHNFIN            Total value of other nonfinancial assets held by   17
+      DEQ                Total value of equity in directly held stocks, s   17
+      EQUITY             Total value of financial assets held by househol   18
+      HOMEEQ             Total value of equity in primary residence of ho   18
+      BUSVEH             Household has vehicle(s) owned by business         18
+      NBUSVEH            Total number of business vehicles held by househ   19
+      VLEASE             Total value of leased vehicles held by household   19
+      PENACCTWD          Withdrawals from IRAs and tax-deferred pension a   19
+      MMDA               money maket deposit accounts, 2016 dollars         19
+      MMMF               money market mutual funds, 2016 dollars            19
+      STMUTF             amount in stock mutual funds, 2016 dollars         20
+      TFBMUTF            amount in tax-free bond mutual funds, 2016 dolla   20
+      GBMUTF             amount in government bond mutual funds, 2016 dol   20
+      OBMUTF             amount in other bond mutual funds, 2016 dollars    20
+      COMUTF             amount in combination and other mutual funds, 20   20
+      OMUTF              amount in other mutual funds, 2016 dollars         20
+      HSTOCKS            have stocks?                                       21
+      NSTOCKS            number different companies in which hold stock     21
+      WILSH              Wilshire index of stock prices                     21
+      NOTXBND            tax-exempt bonds (state and local bonds), 2016 d   21
+      MORTBND            mortgage-backed bonds, 2016 dollars                21
+      GOVTBND            US government and government agency bonds and bi   21
+      OBND               corporate and foreign bonds, 2016 dollars          22
+      FUTPEN             future pensions (accumulated in an account for t   22
+      CURRPEN            current value in pension, 2016 dollars             22
+      THRIFT             Total value of account-type pension plans from R   22
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                       Page iii
+
+
+      item                                                                page
+
+      IRAKH              Total value of IRA/Keogh accounts, 2016 dollars    22
+      DBPLANCJ           Either head or spouse/partner has a defined bene   22
+      DBPLANT            Either head or spouse/partner has DB plan on cur   23
+      DCPLANCJ           Either head or spouse/partner has any type of ac   23
+      BPLANCJ            Either head or spouse/partner has both types of    23
+      ANNUIT             Amount R would receive if they cashed in annuiti   23
+      TRUSTS             Amount R would receive if they cashed in trusts,   23
+      EQUITINC           ratio of equity to normal income                   24
+      HBROK              have a brokerage account                           24
+      HTRAD              traded in the past year                            24
+      NTRAD              number of trades per year                          24
+      OWN                have an owned vehicle                              24
+      NOWN               number of owned vehicles                           25
+      LEASE              have leased vehicle                                25
+      NLEASE             number of leased vehicles                          25
+      NVEHIC             total number of vehicles (owned and leased)        25
+      NEWCAR1            number of car/truck/SUV with model year no older   25
+      NEWCAR2            number of car/truck/SUV with model year no older   25
+      FARMBUS            compute value of business part of farm net of ou   25
+      NHNFIN             total nonfinancial assets excluding principal re   26
+      INCOME             Total amount of income of household, 2016 dollar   26
+      INCCAT             Income percentile groups                           26
+      INCPCTLECAT        Alternate income percentile groups                 27
+      NORMINC            Household normal income, 2016 dollars              27
+      NINCCAT            Normal income percentile groups                    28
+      NINCPCTLECAT       Alternate Normal income percentile groups          29
+      BUSSEFARMINC       Income from business, sole proprietorship, and f   29
+      INTDIVINC          Interest (taxable and nontaxable) and dividend i   30
+      SSRETINC           Social security and pension income, 2016 dollars   30
+      TRANSFOTHINC       Unemployment, alimony/child support, TANF/food s   30
+      WAGEINC            Wage and salary income, 2016 dollars               30
+      KGINC              Capital gain or loss income, 2016 dollars          30
+      NETWORTH           Total net worth of household, 2016 dollars         30
+      NWCAT              Net worth percentile groups                        31
+      NWPCTLECAT         Alternate net worth percentile groups              32
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                         Page 1
+
+
+      CASEID             Case ID (numeric)
+
+           Data type: numeric
+           Record/columns: 1/1-6
+
+      ________________________________________________________________________
+
+      WGT                Sample weight
+
+           This weight should be used for all estimations using the SCF
+           data for which weights are appropriate.
+
+           Data type: numeric
+           Decimals: 10
+           Record/columns: 1/8-23
+
+      ________________________________________________________________________
+
+      YEAR               Survey Year
+
+           Data type: numeric
+           Record/columns: 1/25-28
+
+      ________________________________________________________________________
+
+      Y1                 Case ID with implicate number
+
+           Data type: numeric
+           Record/columns: 1/30-34
+
+      ________________________________________________________________________
+
+      YY1                Case ID
+
+           Data type: numeric
+           Record/columns: 1/36-39
+
+      ________________________________________________________________________
+
+      X1                 Case ID with implicate number
+
+           Only available for 1989
+
+           Data type: numeric
+           Record/columns: 1/41-45
+
+      ________________________________________________________________________
+
+      XX1                Case ID
+
+           Only available for 1989
+
+           Data type: numeric
+           Record/columns: 1/47-50
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                         Page 2
+
+
+      CPI_DEFL           Deflator Value
+
+           Multiply variable by this value to return value to nominal level.
+
+           Data type: numeric
+           Decimals: 10
+           Record/columns: 1/52-63
+
+      ________________________________________________________________________
+
+      AGE                Age of head of household
+
+           Data type: numeric
+           Record/columns: 1/65-66
+
+      ________________________________________________________________________
+
+      AGECL              Age group of the head of household
+
+           Age groups are
+           1.  <35      4.  55-64
+           2.  35-44   5.  65-74
+           3.  45-54   6.  >=75
+
+           VALUE  LABEL
+               1  <35
+               2  35-44
+               3  45-54
+               4  55-64
+               5  65-74
+               6  >=75
+
+           Data type: numeric
+           Record/column: 1/68
+
+      ________________________________________________________________________
+
+      HHSEX              Gender of household head
+
+           VALUE  LABEL
+               1  male
+               2  female
+
+           Data type: numeric
+           Record/column: 1/70
+
+
+
+
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                         Page 3
+
+
+      EDCL               Education category of head of household
+
+           1. no high school diploma/GED
+           2. high school diploma or GED
+           3. some college
+           4. college degree
+
+           VALUE  LABEL
+               1  no high school diploma/GED
+               2  high school diploma or GED
+               3  some college
+               4  college degree
+
+           Data type: numeric
+           Record/column: 1/72
+
+      ________________________________________________________________________
+
+      EDUC               Highest completed grade by head of household
+
+           VALUE  LABEL
+              -1  LESS THAN 1ST GRADE
+               1  1ST, 2ND, 3RD, OR 4TH GRADE
+               2  5TH OR 6TH GRADE
+               3  7TH OR 8TH GRADE
+               4  9TH GRADE
+               5  10TH GRADE
+               6  11TH GRADE
+               7  12TH GRADE, NO DIPLOMA
+               8  HIGH SCHOOL GRADUATE - HIGH SCHOOL DIPLOMA OR EQUIVALENT
+               9  SOME COLLEGE BUT NO DEGREE
+              10  ASSOCIATE DEGREE IN COLLEGE - OCCUPATION/VOCATION PROGRAM
+              11  ASSOCIATE DEGREE IN COLLEGE - ACADEMIC PROGRAM
+              12  BACHELOR'S DEGREE (FOR EXAMPLE: BA, AB, BS)
+              13  MASTER'S DEGREE
+              14  DOCTORATE OR PROFESSIONAL SCHOOL DEGREE
+
+           Data type: numeric
+           Record/columns: 1/74-75
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                         Page 4
+
+
+      FAMSTRUCT          Family structure of household
+
+           1=not married/LWP + children
+           2=not married/LWP + no children + head under 55
+           3=not married/LWP + no children + head 55 or older
+           4=married/LWP+ children
+           5=married/LWP + no children
+
+           VALUE  LABEL
+               1  not married/LWP + children
+               2  not married/LWP + no children + head under 55
+               3  not married/LWP + no children + head 55 or older
+               4  married/LWP+ children
+               5  married/LWP + no children
+
+           Data type: numeric
+           Record/column: 1/77
+
+      ________________________________________________________________________
+
+      HOUSECL            Home-ownership category of household
+
+           1=owns ranch/farm/mobile home/house/condo/coop/etc.,
+           2=otherwise
+
+           VALUE  LABEL
+               1  owns ranch/farm/mobile home/house/condo/coop/etc.
+               2  otherwise
+
+           Data type: numeric
+           Record/column: 1/79
+
+      ________________________________________________________________________
+
+      KIDS               Total number of children in household
+
+           Includes natural children,step-children, and foster children
+           of household head or spouse/partner.
+
+           From 1995 forward, household listing information collected
+           for one fewer HH member.
+
+           Data type: numeric
+           Record/columns: 1/81-82
+
+
+
+
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                         Page 5
+
+
+      MARRIED            Marital status of head of household
+
+           VALUE  LABEL
+               1  married/living with partner
+               2  neither married nor living with partner
+
+           Data type: numeric
+           Record/column: 1/84
+
+      ________________________________________________________________________
+
+      NOCHK              Household has no checking account
+
+           1=no checking account
+           0=has checking account
+
+           Note that ownership includes checking accounts with a zero balance.
+
+           VALUE  LABEL
+               0  has checking account
+               1  no checking account
+
+           Data type: numeric
+           Record/column: 1/86
+
+      ________________________________________________________________________
+
+      OCCAT1             Occupation categories for head of household
+
+           1. work for someone else
+           2. self-employed/partnership
+           3. retired/disabled + (student/homemaker/misc. not working and age 65 or older)
+           4. other groups not working (mainly those under 65 and out of the labor force)
+
+           VALUE  LABEL
+               1  work for someone else
+               2  self-employed/partnership
+               3  retired/disabled + (student/homemaker/misc. not working and age 65 or older)
+               4  other groups not working (mainly those under 65 and out of the labor force)
+
+           Data type: numeric
+           Record/column: 1/88
+
+
+
+
+
+
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                         Page 6
+
+
+      OCCAT2             Occupation classification for head of household
+
+           1=managerial/professional
+           2=technical/sales/services
+           3=other (incl. production/craft/repair workers, operators, laborers,
+             farmers, foresters, fishers)
+           4=not working
+
+           VALUE  LABEL
+               1  managerial/professional
+               2  technical/sales/services
+               3  other (incl. production/craft/repair workers, operators, laborers, farmers, foresters, fishers)
+               4  not working
+
+           Data type: numeric
+           Record/column: 1/90
+
+      ________________________________________________________________________
+
+      RACE               Race/ethnicity of respondent
+
+           1 = white non-Hispanic
+           2 = black / African American
+           3 = Hispanic
+           5 = Other
+
+           VALUE  LABEL
+               1  white non-Hispanic
+               2  black / African American
+               3  Hispanic
+               5  Other
+
+           Data type: numeric
+           Record/column: 1/92
+
+      ________________________________________________________________________
+
+      RACECL             Class of race of respondent
+
+           1 = white non-Hispanic
+           2 = nonwhite or Hispanic
+
+           VALUE  LABEL
+               1  white non-Hispanic
+               2  nonwhite or Hispanic
+
+           Data type: numeric
+           Record/column: 1/94
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                         Page 7
+
+
+      RACECL4            Alternate class of race of respondent
+
+           VALUE  LABEL
+               1  White, non-mixed race
+               2  Black/African-American, non-mixed race
+               3  Hispanic/Latino, non-mixed race
+               4  Other
+
+           Data type: numeric
+           Record/column: 1/96
+
+      ________________________________________________________________________
+
+      LIFECL             Life cycle of head of household
+
+           VALUE  LABEL
+               1  head under 55 + not married/LWP + no children
+               2  head under 55 + married/LWP + no children
+               3  head under 55 + married/LWP + children
+               4  head under 55 + not married/LWP + children
+               5  head 55 or older and working
+               6  head 55 or older and not working
+
+           Data type: numeric
+           Record/column: 1/98
+
+      ________________________________________________________________________
+
+      LF                 Labor force participation of head of household
+
+           VALUE  LABEL
+               0  not working
+               1  working in some way
+
+           Data type: numeric
+           Record/column: 1/100
+
+      ________________________________________________________________________
+
+      INDCAT             Industry classifications for head
+
+           VALUE  LABEL
+               1  mining + construction + manufacturing
+               2  transportation + communications + utilities and sanitary services + wholesale trade + finance, insurance and real estate
+               4  agriculture + retail trade + services + public administration
+
+           Data type: numeric
+           Record/column: 1/102
+
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                         Page 8
+
+
+      EXPENSHILO         Households overall expenses over last 12 months
+
+           Not available for 1989, 1992, 1995, 1998, 2001, 2004, and 2007.
+
+           VALUE  LABEL
+               1  unusually high
+               2  unusually low
+               3  normal
+
+           Data type: numeric
+           Record/column: 1/104
+
+      ________________________________________________________________________
+
+      TURNDOWN           Household has been turned down for credit in the past 5 years
+
+           VALUE  LABEL
+               0  no
+               1  yes
+
+           Data type: numeric
+           Record/column: 1/106
+
+      ________________________________________________________________________
+
+      FEARDENIAL         Household feared being denied credit in the past 5 years
+
+           VALUE  LABEL
+               0  no
+               1  yes
+
+           Data type: numeric
+           Record/column: 1/108
+
+      ________________________________________________________________________
+
+      TURNFEAR           Household has been turned down for credit or feared being denied credit in the past 5 years
+
+           VALUE  LABEL
+               0  no
+               1  yes
+
+           Data type: numeric
+           Record/column: 1/110
+
+
+
+
+
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                         Page 9
+
+
+      BNKRUPLAST5        Household has declared bankruptcy in the past 5 years
+
+           VALUE  LABEL
+               0  no
+               1  yes
+
+           Data type: numeric
+           Record/column: 1/112
+
+      ________________________________________________________________________
+
+      FORECLLAST5        Respondent had a foreclosure in the last five years
+
+           VALUE  LABEL
+               0  No
+               1  Yes
+
+           Data type: numeric
+           Record/column: 1/114
+
+      ________________________________________________________________________
+
+      NOCCBAL            Household does not carry a balance on credit cards
+
+           VALUE  LABEL
+               0  no
+               1  yes
+
+           Data type: numeric
+           Record/column: 1/116
+
+      ________________________________________________________________________
+
+      ASSET              Total value of assets held by household, 2016 dollars
+
+           The sum of financial assets and nonfinancial assets.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/118-130
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                        Page 10
+
+
+      ASSETCAT           Asset percentile groups
+
+           Asset percentile groups
+           1 = 0-20
+           2 = 20-39.9
+           3 = 40-59.9
+           4 = 60-79.9
+           5 = 80-89.9
+           6 = 90-100
+
+           VALUE  LABEL
+               1  0-20
+               2  20-39.9
+               3  40-59.9
+               4  60-79.9
+               5  80-89.9
+               6  90-100
+
+           Data type: numeric
+           Record/column: 1/132
+
+      ________________________________________________________________________
+
+      FIN                Total value of financial assets held by household, 2016 dollars
+
+           Consists of liquid assets, certificates of deposit, directly held
+           pooled investment funds, stocks, bonds, quasi-liquid assets, savings
+           bonds, whole life insurance, other managed assets, and other financial
+           assets. See the definition of each asset for further details.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/134-146
+
+      ________________________________________________________________________
+
+      HLIQ               Household has any checking, savings, money market or call accounts
+
+           This definition of ownership of checking, savings,
+           money market or call accounts includes accounts with
+           a zero balance.
+
+           VALUE  LABEL
+               0  no
+               1  yes
+
+           Data type: numeric
+           Record/column: 1/148
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                        Page 11
+
+
+      LIQ                Total value of all types of transactions accounts, 2016 dollars
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/150-161
+
+      ________________________________________________________________________
+
+      MMA                Total value of money market deposit and money market mutual fund accounts, 2016 dollars
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/163-174
+
+      ________________________________________________________________________
+
+      CHECKING           Total value of checking accounts held by household, 2016 dollars
+
+           Money market accounts are not included in the value of checking accounts.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/176-186
+
+      ________________________________________________________________________
+
+      SAVING             Total value of savings accounts held by household, 2016 dollars
+
+           Does not include money market accounts.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/188-198
+
+      ________________________________________________________________________
+
+      CALL               Total value of call accounts held by household, 2016 dollars
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/200-211
+
+      ________________________________________________________________________
+
+      CDS                Total value of certificates of deposit held by household, 2016 dollars
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/213-224
+
+
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                        Page 12
+
+
+      PREPAID            Amount in prepaid card accounts, 2016 dollars
+
+           Only available for 2016 and later surveys.
+
+           Data type: numeric
+           Record/columns: 1/226-230
+
+      ________________________________________________________________________
+
+      NMMF               Total value of directly held pooled investment funds held by household, 2016 dollars
+
+           Excludes money market mutual funds, but includes stock mutual funds,
+           tax free bond mutual funds, government bond mutual funds, and combination
+           and other mutual funds, such as hedge funds.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/232-243
+
+      ________________________________________________________________________
+
+      SAVBND             Total value of savings bonds held by household, 2016 dollars
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/245-255
+
+      ________________________________________________________________________
+
+      STOCKS             Total value of directly held stocks held by household, 2016 dollars
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/257-269
+
+      ________________________________________________________________________
+
+      BOND               Total value of directly held bonds held by household, 2016 dollars
+
+           Includes nontaxable bonds, mortgage bonds, government bonds, and 'other' bonds,
+           such as coporate or foreign bonds.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/271-282
+
+      ________________________________________________________________________
+
+      CASHLI             Total cash value of whole life insurance held by household, 2016 dollars
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/284-294
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                        Page 13
+
+
+      OTHMA              Total value of other managed assets held by household, 2016 dollars
+
+           Includes trusts, annuities and managed investment accounts in which
+           the household has equity interest.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/296-307
+
+      ________________________________________________________________________
+
+      RETQLIQ            Total value of quasi-liquid held by household, 2016 dollars
+
+           Includes IRAs, Keoghs, thrift-type accounts, and future
+           and current account-type pensions.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/309-319
+
+      ________________________________________________________________________
+
+      RETEQ              Total value of equity in quasi-liquid retirement assets, 2016 dollars
+
+           Includes the total value of the following: IRAs, Keoghs,
+           and thrift-type plans invested in stocks or stock mutual
+           funds.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/321-331
+
+      ________________________________________________________________________
+
+      ANYPEN             Pension exists for either head of household or spouse
+
+           Head of household or spouse has any type of pension from a
+           current or past job.
+
+           VALUE  LABEL
+               0  no
+               1  yes
+
+           Data type: numeric
+           Record/column: 1/333
+
+
+
+
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                        Page 14
+
+
+      OTHFIN             Total value of other financial assets, 2016 dollars
+
+           Includes: loans from the household to someone else, future proceed from
+           lawsuits, royalties, futures, non-public stock, deferred compensation, oil,
+           gas, and mineral investments., cash n.e.c.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/335-346
+
+      ________________________________________________________________________
+
+      NFIN               Total value of nonfinancial assets held by household, 2016 dollars
+
+           Includes value of all vehicles, value of primary residence, value
+           of other residential real estate, net equity in nonresidential real
+           estate, value of business interests, and other financial assets. See
+           definitions of these terms for further details.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/348-360
+
+      ________________________________________________________________________
+
+      VEHIC              Total value of all vehicles held by household, 2016 dollars
+
+           Includes all types of vehicles (cars, trucks, SUVs, motorcycles,
+           boats, airplanes, etc.).
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/362-373
+
+      ________________________________________________________________________
+
+      HOUSES             Total value of primary residence of household, 2016 dollars
+
+           Value of primary residence. Excludes the part of a farm
+           or ranch used in a farming or ranching business.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/375-386
+
+
+
+
+
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                        Page 15
+
+
+      ORESRE             Total value of other residential real estate held by household, 2016 dollars
+
+           Includes land contracts/notes owed to the household and properties other
+           than the principal residence, including 1-4 family residences, time shares,
+           and vacations homes.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/388-399
+
+      ________________________________________________________________________
+
+      NNRESRE            Total value of net equity in nonresidential real estate held by household, 2016 dollars
+
+           Includes real estate other than the principal residence, properties coded
+           as 1-4 family residences, time shares, and vacation homes net of mortgages
+           and other loans taken out for investment real estate.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/401-413
+
+      ________________________________________________________________________
+
+      HBUS               Have active or nonactively managed business(es)
+
+           (X3103=1 | X3401=1);
+           Includes businesses with a zero value. Not available for 1998
+
+           VALUE  LABEL
+               0  no
+               1  yes
+
+           Data type: numeric
+           Record/column: 1/415
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                        Page 16
+
+
+      BUS                Total value of business(es) in which the household has either an active or nonactive interest, 2016 dollars
+
+           Businesses include both actively and nonacitvely-managed business(es).
+
+           Value of active business(es) calculated as net equity if business(es) were
+           sold today, plus loans from the household to the business(es), minus loans
+           from the business(es) to the household not previously reported, plus value
+           of personal assets used as collateral for business(es) loans that were
+           reported earlier.
+
+           Value of nonactive business(es) is calculated as the market value of the
+           business(es).
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/417-429
+
+      ________________________________________________________________________
+
+      ACTBUS             Total value of actively managed business(es), 2016 dollars
+
+           Value of active business(es) calculated as net equity if
+           business(es) were sold today, plus loans from the household
+           to the business(es), minus loans from the business(es) to
+           the household not previously reported, plus value of personal
+           assets used as collateral for business(es) loans that were
+           reported earlier.
+
+           Data type: numeric
+           Decimals: 10
+           Record/columns: 1/431-454
+
+      ________________________________________________________________________
+
+      NONACTBUS          Value of non-actively managed business(es), 2016 dollars
+
+           Value of nonactive business(es) is calculated as the market value
+           of the business(es).
+
+           Data type: numeric
+           Decimals: 10
+           Record/columns: 1/456-478
+
+
+
+
+
+
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                        Page 17
+
+
+      OTHNFIN            Total value of other nonfinancial assets held by household, 2016 dollars
+
+           Includes gold, silver (incl. silverware), other metals or metals NA type,
+           jewelry, gem stones (incl. antique), cars (antique or classic), antiques,
+           furniture, art objects, paintings, sculpture, textile art, ceramic art,
+           photographs, (rare) books, coin collections, stamp collections, guns, misc.
+           real estate (exc. cemetery), cemetery plots, china, figurines, crystal/glassware,
+           musical instruments, livestock, horses, crops, oriental rugs, furs, other
+           collections, incl. baseball cards, records, wine, oil/gas/mineral leases or
+           investments, computer, equipment/tools, association or exchange membership,
+           and other miscellaneous assets.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/480-491
+
+      ________________________________________________________________________
+
+      DEQ                Total value of equity in directly held stocks, stock mutual funds, and combination mutual funds held by household, 2016 dollars
+
+           Assumes combination mutual funds' holdings are split 50-50 between
+           equity and non-equity.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/493-505
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                        Page 18
+
+
+      EQUITY             Total value of financial assets held by household that are invested in stock, 2016 dollars
+
+           Includes:
+               1. directly-held stock
+               2. stock mutual funds: full value if described as stock mutual fund,
+                  1/2 value of combination mutual funds
+               3. IRAs/Keoghs invested in stock:
+                  full value if mostly invested in stock,
+                  1/2 value if split between stocks/bonds or stocks/money market,
+                  1/3 value if split between stocks/bonds/money market
+               4. other managed assets w/equity interest (annuities, trusts, MIAs):
+                  full value if mostly invested in stock,
+                  1/2 value if split between stocks/MFs & bonds/CDs, or
+                 "mixed/diversified,"
+                  1/3 value if "other"
+               5. thrift-type retirement accounts invested in stock
+                  full value if mostly invested in stock
+                  1/2 value if split between stocks and interest earning assets;
+           NOTE:  The allocation rules for mixed investments in 3), 4), and 5) do not
+           apply to 2004 since new questions in 2004 directly ask the share of stock in
+           those assets.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/507-519
+
+      ________________________________________________________________________
+
+      HOMEEQ             Total value of equity in primary residence of household, 2016 dollars
+
+           Difference between value of primary residence and the total
+           amount of debt secured by the primary residence (all mortgages
+           and HELOCs).
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/521-532
+
+      ________________________________________________________________________
+
+      BUSVEH             Household has vehicle(s) owned by business
+
+           VALUE  LABEL
+               0  no
+               1  yes
+
+           Data type: numeric
+           Record/column: 1/534
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                        Page 19
+
+
+      NBUSVEH            Total number of business vehicles held by household
+
+           Data type: numeric
+           Record/columns: 1/536-537
+
+      ________________________________________________________________________
+
+      VLEASE             Total value of leased vehicles held by household, 2016 dollars
+
+           Value of leased cars, trucks, vans, SUV, etc.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/539-547
+
+      ________________________________________________________________________
+
+      PENACCTWD          Withdrawals from IRAs and tax-deferred pension accounts, 2016 dollars
+
+           Not available for 1989, 1992, 1995, 1998, and 2001.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/549-558
+
+      ________________________________________________________________________
+
+      MMDA               money maket deposit accounts, 2016 dollars
+
+           Money market accounts used for checking and other money market account held at
+           commercial banks, savings and loans, savings banks, and credit unions
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/560-571
+
+      ________________________________________________________________________
+
+      MMMF               money market mutual funds, 2016 dollars
+
+           Includes money market accounts used for checking and other money market account
+           held at institutions other than commercial banks, savings and loans, savings banks,
+           and credit unions
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/573-583
+
+
+
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                        Page 20
+
+
+      STMUTF             amount in stock mutual funds, 2016 dollars
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/585-596
+
+      ________________________________________________________________________
+
+      TFBMUTF            amount in tax-free bond mutual funds, 2016 dollars
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/598-609
+
+      ________________________________________________________________________
+
+      GBMUTF             amount in government bond mutual funds, 2016 dollars
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/611-622
+
+      ________________________________________________________________________
+
+      OBMUTF             amount in other bond mutual funds, 2016 dollars
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/624-635
+
+      ________________________________________________________________________
+
+      COMUTF             amount in combination and other mutual funds, 2016 dollars
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/637-648
+
+      ________________________________________________________________________
+
+      OMUTF              amount in other mutual funds, 2016 dollars
+
+           Not available for 1989, 1992, 1995, 1998, and 2001.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/650-661
+
+
+
+
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                        Page 21
+
+
+      HSTOCKS            have stocks?
+
+           VALUE  LABEL
+               0  no
+               1  yes
+
+           Data type: numeric
+           Record/column: 1/663
+
+      ________________________________________________________________________
+
+      NSTOCKS            number different companies in which hold stock
+
+           Data type: numeric
+           Record/columns: 1/665-667
+
+      ________________________________________________________________________
+
+      WILSH              Wilshire index of stock prices
+
+           Not available for 1989, 1992, and 1995.
+
+           Data type: numeric
+           Record/columns: 1/669-673
+
+      ________________________________________________________________________
+
+      NOTXBND            tax-exempt bonds (state and local bonds), 2016 dollars
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/675-686
+
+      ________________________________________________________________________
+
+      MORTBND            mortgage-backed bonds, 2016 dollars
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/688-699
+
+      ________________________________________________________________________
+
+      GOVTBND            US government and government agency bonds and bills, 2016 dollars
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/701-712
+
+
+
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                        Page 22
+
+
+      OBND               corporate and foreign bonds, 2016 dollars
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/714-725
+
+      ________________________________________________________________________
+
+      FUTPEN             future pensions (accumulated in an account for the R/S), 2016 dollars
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/727-737
+
+      ________________________________________________________________________
+
+      CURRPEN            current value in pension, 2016 dollars
+
+           Not available for 1989, 1992, 1995, and 1998.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/739-749
+
+      ________________________________________________________________________
+
+      THRIFT             Total value of account-type pension plans from R and spouse's current job, 2016 dollars
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/751-761
+
+      ________________________________________________________________________
+
+      IRAKH              Total value of IRA/Keogh accounts, 2016 dollars
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/763-773
+
+      ________________________________________________________________________
+
+      DBPLANCJ           Either head or spouse/partner has a defined benefit pension on a current job
+
+           VALUE  LABEL
+               0  no
+               1  yes
+
+           Data type: numeric
+           Record/column: 1/775
+
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                        Page 23
+
+
+      DBPLANT            Either head or spouse/partner has DB plan on current job or some type of pension from a past job to be received in the future
+
+           VALUE  LABEL
+               0  no
+               1  yes
+
+           Data type: numeric
+           Record/column: 1/777
+
+      ________________________________________________________________________
+
+      DCPLANCJ           Either head or spouse/partner has any type of account-based plan on a current job
+
+           VALUE  LABEL
+               0  no
+               1  yes
+
+           Data type: numeric
+           Record/column: 1/779
+
+      ________________________________________________________________________
+
+      BPLANCJ            Either head or spouse/partner has both types of pension plan on a current job
+
+           VALUE  LABEL
+               0  no
+               1  yes
+
+           Data type: numeric
+           Record/column: 1/781
+
+      ________________________________________________________________________
+
+      ANNUIT             Amount R would receive if they cashed in annuities, 2016 dollars
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/783-793
+
+      ________________________________________________________________________
+
+      TRUSTS             Amount R would receive if they cashed in trusts, 2016 dollars
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/795-806
+
+
+
+
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                        Page 24
+
+
+      EQUITINC           ratio of equity to normal income
+
+           Not available for 1989, and 1992.
+
+           Data type: numeric
+           Decimals: 13
+           Record/columns: 1/808-830
+
+      ________________________________________________________________________
+
+      HBROK              have a brokerage account
+
+           VALUE  LABEL
+               0  no
+               1  yes
+
+           Data type: numeric
+           Record/column: 1/832
+
+      ________________________________________________________________________
+
+      HTRAD              traded in the past year
+
+           VALUE  LABEL
+               0  no
+               1  yes
+
+           Data type: numeric
+           Record/column: 1/834
+
+      ________________________________________________________________________
+
+      NTRAD              number of trades per year
+
+           Data type: numeric
+           Decimals: 1
+           Record/columns: 1/836-843
+
+      ________________________________________________________________________
+
+      OWN                have an owned vehicle
+
+           VALUE  LABEL
+               0  no
+               1  yes
+
+           Data type: numeric
+           Record/column: 1/845
+
+
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                        Page 25
+
+
+      NOWN               number of owned vehicles
+
+           Data type: numeric
+           Record/columns: 1/847-848
+
+      ________________________________________________________________________
+
+      LEASE              have leased vehicle
+
+           VALUE  LABEL
+               0  no
+               1  yes
+
+           Data type: numeric
+           Record/column: 1/850
+
+      ________________________________________________________________________
+
+      NLEASE             number of leased vehicles
+
+           Data type: numeric
+           Record/column: 1/852
+
+      ________________________________________________________________________
+
+      NVEHIC             total number of vehicles (owned and leased)
+
+           Data type: numeric
+           Record/columns: 1/854-855
+
+      ________________________________________________________________________
+
+      NEWCAR1            number of car/truck/SUV with model year no older than two years before the survey
+
+           Data type: numeric
+           Record/column: 1/857
+
+      ________________________________________________________________________
+
+      NEWCAR2            number of car/truck/SUV with model year no older than one year before the survey
+
+           Data type: numeric
+           Record/column: 1/859
+
+      ________________________________________________________________________
+
+      FARMBUS            compute value of business part of farm net of outstanding mortgages, 2016 dollars
+
+           Data type: numeric
+           Decimals: 8
+           Record/columns: 1/861-877
+
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                        Page 26
+
+
+      NHNFIN             total nonfinancial assets excluding principal residences, 2016 dollars
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/879-891
+
+      ________________________________________________________________________
+
+      INCOME             Total amount of income of household, 2016 dollars
+
+           Household income for previous calendar year.  Inlcudes wages,
+           self-employment and business income, taxable and tax-exempt
+           interest, dividends, realized capital gains, food stamps and
+           other support programs provided by the government, pension income
+           and withdrawals from retirement accounts, Social Security income,
+           alimony and other support payments, and miscellaneous sources of
+           income.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/893-904
+
+      ________________________________________________________________________
+
+      INCCAT             Income percentile groups
+
+           Income percentile groups
+           1 = 0-20
+           2 = 20-39.9
+           3 = 40-59.9
+           4 = 60-79.9
+           5 = 80-89.9
+           6 = 90-100
+
+           VALUE  LABEL
+               1  0-20
+               2  20-39.9
+               3  40-59.9
+               4  60-79.9
+               5  80-89.9
+               6  90-100
+
+           Data type: numeric
+           Record/column: 1/906
+
+
+
+
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                        Page 27
+
+
+      INCPCTLECAT        Alternate income percentile groups
+
+           Alternate income percentile groups
+
+           1 = 0-9.9
+           2 = 10-19.9
+           3 = 20-29.9
+           4 = 30-39.9
+           5 = 40-49.9
+           6 = 50-59.9
+           7 = 60-69.9
+           8 = 70-79.9
+           9 = 80-89.9
+           10 = 90-94.9
+           11 = 95-98.9
+           12 = 99-100
+
+           VALUE  LABEL
+               1  0-9.9
+               2  10-19.9
+               3  20-29.9
+               4  30-39.9
+               5  40-49.9
+               6  50-59.9
+               7  60-69.9
+               8  70-79.9
+               9  80-89.9
+              10  90-94.9
+              11  95-98.9
+              12  99-100
+
+           Data type: numeric
+           Record/columns: 1/908-909
+
+      ________________________________________________________________________
+
+      NORMINC            Household normal income, 2016 dollars
+
+           Value of income the household would expect to receive in a "normal"
+           year.  This value may be the same as INCOME. Not available for
+           1989 and 1992.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/911-922
+
+
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                        Page 28
+
+
+      NINCCAT            Normal income percentile groups
+
+           Normal income percentile groups
+
+           1 0-20
+           2 20-39.9
+           3 40-59.9
+           4 60-79.9
+           5 80-89.9
+           6 90-100
+
+           Not available for 1989 and 1992.
+
+           VALUE  LABEL
+               1  0-20
+               2  20-39.9
+               3  40-59.9
+               4  60-79.9
+               5  80-89.9
+               6  90-100
+
+           Data type: numeric
+           Record/column: 1/924
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                        Page 29
+
+
+      NINCPCTLECAT       Alternate Normal income percentile groups
+
+           Alternate normal income percentile groups
+
+           1 = 0-9.9
+           2 = 10-19.9
+           3 = 20-29.9
+           4 = 30-39.9
+           5 = 40-49.9
+           6 = 50-59.9
+           7 = 60-69.9
+           8 = 70-79.9
+           9 = 80-89.9
+           10 = 90-94.9
+           11 = 95-98.9
+           12 = 99-100
+
+
+           Not available for 1989 and 1992.
+
+           VALUE  LABEL
+               1  0-9.9
+               2  10-19.9
+               3  20-29.9
+               4  30-39.9
+               5  40-49.9
+               6  50-59.9
+               7  60-69.9
+               8  70-79.9
+               9  80-89.9
+              10  90-94.9
+              11  95-98.9
+              12  99-100
+
+           Data type: numeric
+           Record/columns: 1/926-927
+
+      ________________________________________________________________________
+
+      BUSSEFARMINC       Income from business, sole proprietorship, and farm, 2016 dollars
+
+           X5704+X5714
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/929-940
+
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                        Page 30
+
+
+      INTDIVINC          Interest (taxable and nontaxable) and dividend income, 2016 dollars
+
+           X5706+x5708+X5710
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/942-952
+
+      ________________________________________________________________________
+
+      SSRETINC           Social security and pension income, 2016 dollars
+
+           X5722
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/954-964
+
+      ________________________________________________________________________
+
+      TRANSFOTHINC       Unemployment, alimony/child support, TANF/food stamps/SSI, and other income, 2016 dollars
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/966-977
+
+      ________________________________________________________________________
+
+      WAGEINC            Wage and salary income, 2016 dollars
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/979-990
+
+      ________________________________________________________________________
+
+      KGINC              Capital gain or loss income, 2016 dollars
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/992-1003
+
+      ________________________________________________________________________
+
+      NETWORTH           Total net worth of household, 2016 dollars
+
+           The difference between assets and debt. See definitions of assets
+           and debt for further clarification.
+
+           Data type: numeric
+           Decimals: 2
+           Record/columns: 1/1005-1017
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                        Page 31
+
+
+      NWCAT              Net worth percentile groups
+
+           Net worth percentile groups
+
+           1 = 0-24.9
+           2 = 25-49.9
+           3 = 50-74.9
+           4 = 75-89.9
+           5 = 90-100
+
+           VALUE  LABEL
+               1  0-24.9
+               2  25-49.9
+               3  50-74.9
+               4  75-89.9
+               5  90-100
+
+           Data type: numeric
+           Record/column: 1/1019
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 26, 2020
+
+
+
+      SCF Combined Extract Data                                        Page 32
+
+
+      NWPCTLECAT         Alternate net worth percentile groups
+
+           Alternate net worth percentile groups
+
+           1 = 0-9.9
+           2 = 10-19.9
+           3 = 20-29.9
+           4 = 30-39.9
+           5 = 40-49.9
+           6 = 50-59.9
+           7 = 60-69.9
+           8 = 70-79.9
+           9 = 80-89.9
+           10 = 90-94.9
+           11 = 95-98.9
+           12 = 99-100
+
+           VALUE  LABEL
+               1  0-9.9
+               2  10-19.9
+               3  20-29.9
+               4  30-39.9
+               5  40-49.9
+               6  50-59.9
+               7  60-69.9
+               8  70-79.9
+               9  80-89.9
+              10  90-94.9
+              11  95-98.9
+              12  99-100
+
+           Data type: numeric
+           Record/columns: 1/1021-1022
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 26, 2020
