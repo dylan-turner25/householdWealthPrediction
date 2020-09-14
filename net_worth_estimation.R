@@ -1,7 +1,7 @@
 rm(list = ls()) # clear console
 options(scipen = 999) # forces R to avoid exponential notation
 system.info <- Sys.info()
-setwd("/home/dylan/Dropbox/Research/Estimating Wealth")
+setwd("")
 
 # load libraries --------------------------
 library(xgboost) 
